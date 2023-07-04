@@ -1,13 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from 'next/image';
-import React from 'react';
-import { FaFolderOpen } from 'react-icons/fa';
+import React, { useEffect, useRef } from 'react';
+import { FaFolderOpen, FaMobile, FaMobileAlt } from 'react-icons/fa';
+import Link from 'next/link';
+import dados from '../data/data.json';
+import { tecnologias } from '../data/tecnologias.json';
 
 export default function Portfolio() {
+  const canvasRef = useRef(null);
+  useEffect(() => {
+    console.log(dados.projetos);
+    console.log(tecnologias.HTML);
+  }, []);
   return (
 
-    <section className="text-gray-800 pt-10  px-4 h-screen flex flex-col  items-center  relative" id="portfolio">
-      <section className="flex text-justify w-full max-w-4xl flex-col items-center mt-10">
+    <section className="text-gray-800 pt-10  px-4 flex flex-col shadow-lg  items-center   relative" id="portfolio">
+      <section className="flex text-justify w-full mb-10 max-w-7xl flex-col items-center mt-10">
         <section
           data-aos="fade-left"
           data-aos-duration="1000"
@@ -20,272 +28,63 @@ export default function Portfolio() {
         </section>
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 
-          <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className="bg-slate-100 rounded-3xl p-3 justify-center flex flex-col items-center">
+          {
+            dados.projetos.map((projeto) => {
+              console.log(projeto);
+              return (
+                <section data-aos="zoom-in" data-aos-duration="1000" className="bg-white rounded-3xl p-3 justify-between gap-2 flex flex-col items-center shadow-md">
 
-            <figure
-              className="relative max-w-xs cursor-pointer  flex flex-col items-center p-2"
-            >
-              <figcaption className="px-4 text-3xl pb-4">
-                <p className="font-bold">PIXEL ARTS</p>
-              </figcaption>
-              <a href="#">
-                <img className="rounded-lg" src="/images/profile.jpeg" alt="imagem description" />
-              </a>
-            </figure>
-            <div className="flex flex-row gap-2">
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
-            </div>
-            <section className="flex w-full flex-col gap-2 m-3">
+                  <p className="font-bold px-4 text-3xl">{projeto.nome}</p>
 
-              <hr />
+                  {projeto.video
+                    ? (
+                      <div className="relative w-full aspect-video">
+                        <video className="rounded-lg   w-full aspect-video " src={projeto.video} alt="video description" loop autoPlay muted />
+                      </div>
+                    )
+                    : (
+                      <div className="relative">
+                        <img className="rounded-lg  w-full aspect-video" src={projeto.image} alt={projeto.nome} />
+                      </div>
 
-              <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
+                    )}
 
-                <section className="relative w-7 h-7">
-                  <Image src="/images/react.png" alt="profile image" fill />
+                  <div className="flex flex-row gap-2">
+                    <Link href={projeto.linkRepositorio || '#'} target="_blank">
+                      <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
+                    </Link>
+
+                    <Link href={projeto.linkDeploy || '#'} target="_blank">
+                      <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
+                    </Link>
+                  </div>
+                  <section className="flex w-full flex-col gap-2 m-3">
+
+                    <hr />
+
+                    <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
+
+                      {
+                        projeto.tecnologias.map((tecnologia) => (
+                          <section className="relative w-7 h-7">
+                            <Image src={tecnologias[tecnologia]} alt="tecnologia" title={tecnologia} fill />
+                          </section>
+                        ))
+
+                      }
+                      {
+                      projeto.responsivo && (
+
+                        <FaMobileAlt className="w-7 h-7" title="Responsivo" />
+                      )
+                      }
+                    </section>
+                  </section>
+
                 </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/material-ui.svg" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/tailwind-css.svg" alt="profile image" fill />
-                </section>
-
-                <section className="relative w-7 h-7 flex items-center">
-                  <Image src="/images/node.svg" alt="profile image" width={60} height={30} />
-                </section>
-                <section className="relative w-7 h-7">
-                  <Image src="/images/docker.png" alt="profile image" width={60} height={30} />
-                </section>
-
-              </section>
-
-            </section>
-
-          </section>
-          <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" className="bg-slate-100 rounded-3xl p-3 justify-center flex flex-col items-center">
-
-            <figure className="relative max-w-xs cursor-pointer  flex flex-col items-center p-2">
-              <figcaption className="px-4 text-3xl pb-4">
-                <p className="font-bold">PIXEL ARTS</p>
-              </figcaption>
-              <a href="#">
-                <img className="rounded-lg" src="/images/profile.jpeg" alt="imagem description" />
-              </a>
-            </figure>
-            <div className="flex flex-row gap-2">
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
-            </div>
-            <section className="flex w-full flex-col gap-2 m-3">
-
-              <hr />
-
-              <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
-
-                <section className="relative w-7 h-7">
-                  <Image src="/images/react.png" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/material-ui.svg" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/tailwind-css.svg" alt="profile image" fill />
-                </section>
-
-                <section className="relative w-7 h-7 flex items-center">
-                  <Image src="/images/node.svg" alt="profile image" width={60} height={30} />
-                </section>
-                <section className="relative w-7 h-7">
-                  <Image src="/images/docker.png" alt="profile image" width={60} height={30} />
-                </section>
-
-              </section>
-
-            </section>
-
-          </section>
-          <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" className="bg-slate-100 rounded-3xl p-3 justify-center flex flex-col items-center">
-
-            <figure className="relative max-w-xs cursor-pointer  flex flex-col items-center p-2">
-              <figcaption className="px-4 text-3xl pb-4">
-                <p className="font-bold">PIXEL ARTS</p>
-              </figcaption>
-              <a href="#">
-                <img className="rounded-lg" src="/images/profile.jpeg" alt="imagem description" />
-              </a>
-            </figure>
-            <div className="flex flex-row gap-2">
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
-            </div>
-            <section className="flex w-full flex-col gap-2 m-3">
-
-              <hr />
-
-              <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
-
-                <section className="relative w-7 h-7">
-                  <Image src="/images/react.png" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/material-ui.svg" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/tailwind-css.svg" alt="profile image" fill />
-                </section>
-
-                <section className="relative w-7 h-7 flex items-center">
-                  <Image src="/images/node.svg" alt="profile image" width={60} height={30} />
-                </section>
-                <section className="relative w-7 h-7">
-                  <Image src="/images/docker.png" alt="profile image" width={60} height={30} />
-                </section>
-
-              </section>
-
-            </section>
-
-          </section>
-          <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className="bg-slate-100 rounded-3xl p-3 justify-center flex flex-col items-center">
-
-            <figure className="relative max-w-xs cursor-pointer  flex flex-col items-center p-2">
-              <figcaption className="px-4 text-3xl pb-4">
-                <p className="font-bold">PIXEL ARTS</p>
-              </figcaption>
-              <a href="#">
-                <img className="rounded-lg" src="/images/profile.jpeg" alt="imagem description" />
-              </a>
-            </figure>
-            <div className="flex flex-row gap-2">
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
-            </div>
-            <section className="flex w-full flex-col gap-2 m-3">
-
-              <hr />
-
-              <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
-
-                <section className="relative w-7 h-7">
-                  <Image src="/images/react.png" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/material-ui.svg" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/tailwind-css.svg" alt="profile image" fill />
-                </section>
-
-                <section className="relative w-7 h-7 flex items-center">
-                  <Image src="/images/node.svg" alt="profile image" width={60} height={30} />
-                </section>
-                <section className="relative w-7 h-7">
-                  <Image src="/images/docker.png" alt="profile image" width={60} height={30} />
-                </section>
-
-              </section>
-
-            </section>
-
-          </section>
-          <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" className="bg-slate-100 rounded-3xl p-3 justify-center flex flex-col items-center">
-
-            <figure className="relative max-w-xs cursor-pointer  flex flex-col items-center p-2">
-              <figcaption className="px-4 text-3xl pb-4">
-                <p className="font-bold">PIXEL ARTS</p>
-              </figcaption>
-              <a href="#">
-                <img className="rounded-lg" src="/images/profile.jpeg" alt="imagem description" />
-              </a>
-            </figure>
-            <div className="flex flex-row gap-2">
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
-            </div>
-            <section className="flex w-full flex-col gap-2 m-3">
-
-              <hr />
-
-              <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
-
-                <section className="relative w-7 h-7">
-                  <Image src="/images/react.png" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/material-ui.svg" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/tailwind-css.svg" alt="profile image" fill />
-                </section>
-
-                <section className="relative w-7 h-7 flex items-center">
-                  <Image src="/images/node.svg" alt="profile image" width={60} height={30} />
-                </section>
-                <section className="relative w-7 h-7">
-                  <Image src="/images/docker.png" alt="profile image" width={60} height={30} />
-                </section>
-
-              </section>
-
-            </section>
-
-          </section>
-          <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" className="bg-slate-100 rounded-3xl p-3 justify-center flex flex-col items-center">
-
-            <figure className="relative max-w-xs cursor-pointer  flex flex-col items-center p-2">
-              <figcaption className="px-4 text-3xl pb-4">
-                <p className="font-bold">PIXEL ARTS</p>
-              </figcaption>
-              <a href="#">
-                <img className="rounded-lg" src="/images/profile.jpeg" alt="imagem description" />
-              </a>
-            </figure>
-            <div className="flex flex-row gap-2">
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
-              <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
-            </div>
-            <section className="flex w-full flex-col gap-2 m-3">
-
-              <hr />
-
-              <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
-
-                <section className="relative w-7 h-7">
-                  <Image src="/images/react.png" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/material-ui.svg" alt="profile image" fill />
-                </section>
-                <section className="relative w-7 h-7">
-
-                  <Image src="/images/tailwind-css.svg" alt="profile image" fill />
-                </section>
-
-                <section className="relative w-7 h-7 flex items-center">
-                  <Image src="/images/node.svg" alt="profile image" width={60} height={30} />
-                </section>
-                <section className="relative w-7 h-7">
-                  <Image src="/images/docker.png" alt="profile image" width={60} height={30} />
-                </section>
-
-              </section>
-
-            </section>
-
-          </section>
+              );
+            })
+          }
 
         </section>
       </section>

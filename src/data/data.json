@@ -1,0 +1,46 @@
+{
+  "projetos": [
+    {
+      "id": 1,
+      "nome": "Lessons Learned",
+      "tecnologias": ["HTML5", "CSS3"],
+      "frontend": true,
+      "backend": false,
+      "descricao": "Desenvolvimento de uma página web completa, aplicando requisitos como cor de fundo personalizada, barra superior fixa, inclusão de foto pessoal, listas numeradas e não numeradas, rodapé, links externos e semântica correta. Implementação de tabela, manipulação do Box Model e personalização de atributos relacionados à tipografia. Habilidades desenvolvidas em HTML, CSS e design de página web.",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://thalles-leite.github.io/projeto01/",
+      "image": "images/projetos/LessonsLearned.png",
+      "video": "",
+      "responsivo": false
+    },
+    {
+      "id": 2,
+      "nome": "Pixel Art",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript"],
+      "frontend": true,
+      "backend": false,
+   
+      "descricao": "Desenvolvi uma aplicação interativa de 'Pixel Art' que permite criar desenhos em um quadro de pixels. Os principais pontos aprendidos incluem:\n\n- Manipulação do DOM para criar e interagir com os elementos HTML.\n- Implementação de uma paleta de cores para selecionar e pintar os pixels.\n- Uso do localStorage para salvar e recuperar os desenhos após recarregar a página.\n- Manipulação de eventos de clique nos pixels e na paleta de cores.\n- Responsividade para se adaptar a diferentes tamanhos de tela.\n- Validação do tamanho do quadro de pixels.\n- Criação de botões para ações como limpar o quadro e retornar às configurações iniciais.\n- Persistência de dados para manter o trabalho anterior do usuário.\n\nEste projeto proporcionou uma experiência prática em desenvolvimento web, envolvendo manipulação do DOM, eventos, gerenciamento de estado e armazenamento de dados localmente. Foi uma oportunidade de explorar criatividade e expressão artística, combinando lógica de programação com design interativo.",  
+      "linkRepositorio": "#",
+      "linkDeploy": "https://thalles-leite.github.io/projeto03/", 
+      "image":"",
+      "video": "/images/projetos/marioMockup.mp4",
+      "responsivo":true
+    },
+    {
+      "id": 3,
+      "nome": "Meme Generator",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript"],
+      "frontend": true,
+      "backend": false,
+      "descricao": "O projeto consiste em criar um gerador de memes personalizados. Foi desenvolvido um formulário com limite de caracteres e funcionalidade de upload de imagem. Foram implementados botões que alteram a aparência do meme, e miniaturas de memes pré-prontos para seleção. As habilidades aplicadas incluem manipulação de elementos HTML, estilização CSS, manipulação de eventos JavaScript, manipulação de arquivos e diretórios, além do uso de lógica de programação para limitar o tamanho do texto e realizar a troca de cores da borda. O projeto ajudou a desenvolver habilidades de front-end, incluindo HTML, CSS e JavaScript, bem como habilidades de manipulação de arquivos e lógica de programação.",
+      "image":"",
+      "video":"/images/projetos/memeMockup.mp4",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://thalles-leite.github.io/projetos-bonus/gerador-de-meme/",
+      "responsivo":true
+    }
+
+    
+  ]
+}

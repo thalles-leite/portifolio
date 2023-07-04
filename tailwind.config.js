@@ -12,7 +12,10 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      spacing: {
+        7.5: '1.7rem', // Valor de 7.5 espaços na escala padrão do Tailwind (1 rem = 0.25 espaços)
+      },
     },
   },
   plugins: [],
-}
+};

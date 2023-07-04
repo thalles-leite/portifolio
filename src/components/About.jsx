@@ -1,11 +1,12 @@
+/* eslint-disable max-len */
 import Image from 'next/image';
 import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 
 export default function About() {
   return (
-    <section className="text-gray-800 pb-10 h-fit flex flex-col items-center justify-start bg-slate-100 relative" id="about">
-      <section className="flex text-justify max-w-4xl   flex-col  items-center mt-10">
+    <section className="text-gray-800 pb-10 h-fit shadow-xl rounded-md flex flex-col items-center justify-start bg-white relative" id="about">
+      <section className="flex text-justify max-w-5xl   flex-col  items-center mt-10">
         <div
           data-aos="fade-right"
           data-aos-anchor-placement="bottom-bottom"
@@ -13,11 +14,13 @@ export default function About() {
         >
           <h1 className="text-2xl font-bold text-center flex items-center gap-2 mb-10">
             <FaUserCircle className="w-6 h-6 text-gray-800 " />
+            <hr />
             SOBRE
+            <hr />
           </h1>
         </div>
         <section className="text-md p-4">
-          <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <p className="pb-5 text-xl">
               Sou técnico em Informática para Web pelo IFBA, Bacharel em Engenharia Elétrica pela UFOB e pós-graduado em Engenharia de Software pela Faculdade Prominas.
 
@@ -28,7 +31,6 @@ export default function About() {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom"
             data-aos-duration="1000"
           >
             <Image src="/images/engenharia.svg" alt="profile image" width={120} height={120} className="float-left mr-4 top-20 left-20 " />

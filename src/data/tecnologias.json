@@ -1,0 +1,14 @@
+{
+  "tecnologias": {
+    "HTML": "/images/html.png",
+    "HTML5": "/images/html5.png",
+    "CSS3": "/images/css3.png",
+    "JavaScript": "/images/javascript.png",
+    "React": "/images/react.png",
+    "Node.js": "/images/nodejs.png",
+    "MongoDB": "/images/mongodb.png",
+    "Vue.js": "/images/vuejs.png",
+    "Laravel": "/images/laravel.png",
+    "MySQL": "/images/mysql.png"
+  }
+}
