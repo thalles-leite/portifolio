@@ -39,6 +39,19 @@
       "linkRepositorio": "#",
       "linkDeploy": "https://thalles-leite.github.io/projetos-bonus/gerador-de-meme/",
       "responsivo":true
+    },
+    {
+      "id":4,
+      "nome": "Jump Kart",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript"],
+      "frontend": true,
+      "backend": false,
+      "descricao": "Durante o primeiro módulo do curso de Desenvolvimento Web da Trybe, utilizei JavaScript puro para desenvolver um jogo simples. Nesse projeto, pude praticar a manipulação do DOM (Document Object Model), que consiste em acessar e modificar elementos HTML através de scripts. Também apliquei conhecimentos sobre eventos, que são ações acionadas pelo usuário ou navegador, e utilizei o Web Storage para armazenar dados de forma segura no navegador. Essa experiência me permitiu aprimorar minhas habilidades em manipulação do DOM, eventos e armazenamento de dados na web.",
+      "image":"",
+      "video":"/images/projetos/jumpMockup.mp4",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://thalles-leite.github.io/jump-kart/",
+      "responsivo":true
     }
 
     
