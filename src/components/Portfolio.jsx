@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { FaFolderOpen, FaMobileAlt } from 'react-icons/fa';
+import { FaFolderOpen, FaMobileAlt, FaArrowCircleUp } from 'react-icons/fa';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -59,7 +59,7 @@ export default function Portfolio() {
           <Swiper
             slidesPerView={slidesPerView}
             navigation
-            loop
+            // loop
             pagination={{
               clickable: true,
             }}
@@ -69,7 +69,12 @@ export default function Portfolio() {
             {
             dados.projetos.map((projeto) => (
               <SwiperSlide>
-                <section data-aos="zoom-in" data-aos-duration="1000" className="rounded-3xl  p-3 justify-between gap-2 flex flex-col items-center ">
+                <section
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  className="rounded-3xl p-3 justify-between gap-2 flex flex-col items-center"
+
+                >
 
                   <p className="font-bold px-4 text-3xl">{projeto.nome}</p>
 
@@ -122,6 +127,14 @@ export default function Portfolio() {
               </SwiperSlide>
             )).slice(-6).reverse()
           }
+            <SwiperSlide>
+              <Link href="/#" className="flex rounded-3xl flex-col items-center justify-center min-h-full gap-5 hover:font-bold ">
+
+                <FaArrowCircleUp className="w-6 h-6 text-gray-800" />
+                <p>Exibir todos os Projetos </p>
+
+              </Link>
+            </SwiperSlide>
           </Swiper>
         </section>
       </section>
