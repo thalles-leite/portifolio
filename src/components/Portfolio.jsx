@@ -75,7 +75,7 @@ export default function Portfolio() {
                 </section>
 
               </section>
-            ))
+            )).slice(-3).reverse()
           }
 
         </section>
