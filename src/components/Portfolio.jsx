@@ -1,17 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
-import { FaFolderOpen, FaMobile, FaMobileAlt } from 'react-icons/fa';
+import React from 'react';
+import { FaFolderOpen, FaMobileAlt } from 'react-icons/fa';
 import Link from 'next/link';
 import dados from '../data/data.json';
 import { tecnologias } from '../data/tecnologias.json';
 
 export default function Portfolio() {
-  const canvasRef = useRef(null);
-  useEffect(() => {
-    console.log(dados.projetos);
-    console.log(tecnologias.HTML);
-  }, []);
   return (
 
     <section className="text-gray-800 pt-10  px-4 flex flex-col shadow-lg  items-center   relative" id="portfolio">
@@ -29,42 +24,40 @@ export default function Portfolio() {
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 
           {
-            dados.projetos.map((projeto) => {
-              console.log(projeto);
-              return (
-                <section data-aos="zoom-in" data-aos-duration="1000" className="bg-white rounded-3xl p-3 justify-between gap-2 flex flex-col items-center shadow-md">
+            dados.projetos.map((projeto) => (
+              <section data-aos="zoom-in" data-aos-duration="1000" className="bg-white rounded-3xl p-3 justify-between gap-2 flex flex-col items-center shadow-md">
 
-                  <p className="font-bold px-4 text-3xl">{projeto.nome}</p>
+                <p className="font-bold px-4 text-3xl">{projeto.nome}</p>
 
-                  {projeto.video
-                    ? (
-                      <div className="relative w-full aspect-video">
-                        <video className="rounded-lg   w-full aspect-video " src={projeto.video} alt="video description" loop autoPlay muted />
-                      </div>
-                    )
-                    : (
-                      <div className="relative">
-                        <img className="rounded-lg  w-full aspect-video" src={projeto.image} alt={projeto.nome} />
-                      </div>
+                {projeto.video
+                  ? (
+                    <div className="relative w-full aspect-video">
+                      <video className="rounded-lg   w-full aspect-video " src={projeto.video} alt="video description" loop autoPlay muted />
+                    </div>
+                  )
+                  : (
+                    <div className="relative">
+                      <img className="rounded-lg  w-full aspect-video" src={projeto.image} alt={projeto.nome} />
+                    </div>
 
-                    )}
+                  )}
 
-                  <div className="flex flex-row gap-2">
-                    <Link href={projeto.linkRepositorio || '#'} target="_blank">
-                      <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
-                    </Link>
+                <div className="flex flex-row gap-2">
+                  <Link href={projeto.linkRepositorio || '#'} target="_blank">
+                    <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
+                  </Link>
 
-                    <Link href={projeto.linkDeploy || '#'} target="_blank">
-                      <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
-                    </Link>
-                  </div>
-                  <section className="flex w-full flex-col gap-2 m-3">
+                  <Link href={projeto.linkDeploy || '#'} target="_blank">
+                    <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
+                  </Link>
+                </div>
+                <section className="flex w-full flex-col gap-2 m-3">
 
-                    <hr />
+                  <hr />
 
-                    <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
+                  <section className="flex flex-wrap w-full gap-4 px-2 justify-center items-end">
 
-                      {
+                    {
                         projeto.tecnologias.map((tecnologia) => (
                           <section className="relative w-7 h-7">
                             <Image src={tecnologias[tecnologia]} alt="tecnologia" title={tecnologia} fill />
@@ -72,18 +65,17 @@ export default function Portfolio() {
                         ))
 
                       }
-                      {
+                    {
                       projeto.responsivo && (
 
                         <FaMobileAlt className="w-7 h-7" title="Responsivo" />
                       )
                       }
-                    </section>
                   </section>
-
                 </section>
-              );
-            })
+
+              </section>
+            ))
           }
 
         </section>

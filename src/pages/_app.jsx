@@ -1,8 +1,10 @@
-import '@/styles/globals.css';
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
+import '../styles/globals.css';
+import React, { useEffect } from 'react';
 
 import initializeAOS from '../utils/aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {

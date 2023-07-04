@@ -1,8 +1,6 @@
 // Hero.js
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Hero() {
   return (
