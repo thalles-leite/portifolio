@@ -85,7 +85,7 @@ export default function Portfolio() {
                       </div>
                     )
                     : (
-                      <div className="relative">
+                      <div className="relative w-full aspect-video pt-2 pb-8">
                         <img className="rounded-lg  w-full aspect-video" src={projeto.image} alt={projeto.nome} />
                       </div>
 
