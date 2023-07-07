@@ -74,7 +74,7 @@
       "backend": false,
       "descricao": "O PokeMemory é um jogo de memória com tema Pokémon desenvolvido para o meu portfólio. Utilizando habilidades em manipulação de DOM, eventos, Web Storage, Flexbox e Media Query, criei uma experiência interativa onde os jogadores precisam encontrar pares de cartas correspondentes de Pokémon",
       "image":"",
-      "video":"/images/projetos/pokeMemoryMockup.mp4",
+      "video":"/images/projetos/pokeMockup.mp4",
       "linkRepositorio": "#",
       "linkDeploy": "https://thalles-leite.github.io/pokeMemory/",
       "responsivo":true
