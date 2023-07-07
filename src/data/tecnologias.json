@@ -9,6 +9,9 @@
     "MongoDB": "/images/mongodb.png",
     "Vue.js": "/images/vuejs.png",
     "Laravel": "/images/laravel.png",
-    "MySQL": "/images/mysql.png"
+    "MySQL": "/images/mysql.png",
+    "MaterialUI": "/images/material-ui.svg",
+    "Redux":"/images/redux-icon.png"
+
   }
 }

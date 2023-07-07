@@ -72,7 +72,7 @@ export default function Portfolio() {
                 <section
                   data-aos="zoom-in"
                   data-aos-duration="1000"
-                  className="rounded-3xl p-3 justify-between gap-2 flex flex-col items-center"
+                  className="rounded-3xl p-3 justify-evenly flex flex-col items-center"
 
                 >
 
@@ -80,7 +80,7 @@ export default function Portfolio() {
 
                   {projeto.video
                     ? (
-                      <div className="relative w-full aspect-video">
+                      <div className="relative w-full aspect-video pt-2 pb-8">
                         <video className="rounded-lg   w-full aspect-video " src={projeto.video} alt="video description" loop autoPlay muted />
                       </div>
                     )
@@ -93,11 +93,11 @@ export default function Portfolio() {
 
                   <div className="flex flex-row gap-2">
                     <Link href={projeto.linkRepositorio || '#'} target="_blank">
-                      <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Git Hub</button>
+                      <button type="button" className="bg-gray-600 text-white px-2 py-1 text-sm  rounded-lg hover:bg-gray-700">Git Hub</button>
                     </Link>
 
                     <Link href={projeto.linkDeploy || '#'} target="_blank">
-                      <button type="button" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Live Demo</button>
+                      <button type="button" className="bg-gray-600 text-white px-2 py-1 text-sm  rounded-lg hover:bg-gray-700">Live Demo</button>
                     </Link>
                   </div>
                   <section className="flex w-full flex-col gap-2 m-3">
@@ -108,7 +108,7 @@ export default function Portfolio() {
 
                       {
                         projeto.tecnologias.map((tecnologia) => (
-                          <section className="relative w-7 h-7">
+                          <section className="relative w-8 h-7">
                             <Image src={tecnologias[tecnologia]} alt="tecnologia" title={tecnologia} fill />
                           </section>
                         ))
@@ -125,15 +125,15 @@ export default function Portfolio() {
 
                 </section>
               </SwiperSlide>
-            )).slice(-6).reverse()
+            )).reverse()
           }
             <SwiperSlide>
-              <Link href="/#" className="flex rounded-3xl flex-col items-center justify-center min-h-full gap-5 hover:font-bold ">
-
-                <FaArrowCircleUp className="w-6 h-6 text-gray-800" />
-                <p>Exibir todos os Projetos </p>
-
-              </Link>
+              <section className=" flex items-center justify-center h-full">
+                <Link href="/#" className="flex rounded-3xl flex-col items-center justify-center  gap-5 hover:font-bold ">
+                  <FaArrowCircleUp className="w-6 h-6 text-gray-800" />
+                  <p>Exibir todos os Projetos </p>
+                </Link>
+              </section>
             </SwiperSlide>
           </Swiper>
         </section>

@@ -46,14 +46,91 @@
       "tecnologias": ["HTML5", "CSS3", "JavaScript"],
       "frontend": true,
       "backend": false,
-      "descricao": "Durante o primeiro módulo do curso de Desenvolvimento Web da Trybe, utilizei JavaScript puro para desenvolver um jogo simples. Nesse projeto, pude praticar a manipulação do DOM (Document Object Model), que consiste em acessar e modificar elementos HTML através de scripts. Também apliquei conhecimentos sobre eventos, que são ações acionadas pelo usuário ou navegador, e utilizei o Web Storage para armazenar dados de forma segura no navegador. Essa experiência me permitiu aprimorar minhas habilidades em manipulação do DOM, eventos e armazenamento de dados na web.",
+      "descricao": "Foi utilizado JavaScript puro para desenvolver um jogo simples. Nesse projeto, pude praticar a manipulação do DOM (Document Object Model), que consiste em acessar e modificar elementos HTML através de scripts. Também apliquei conhecimentos sobre eventos, que são ações acionadas pelo usuário ou navegador, e utilizei o Web Storage para armazenar dados de forma segura no navegador. Essa experiência me permitiu aprimorar minhas habilidades em manipulação do DOM, eventos e armazenamento de dados na web.",
       "image":"",
       "video":"/images/projetos/jumpMockup.mp4",
       "linkRepositorio": "#",
       "linkDeploy": "https://thalles-leite.github.io/jump-kart/",
       "responsivo":true
+    },
+    {
+      "id":5,
+      "nome": "Genius",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript"],
+      "frontend": true,
+      "backend": false,
+      "descricao": "O projeto Genius é um jogo de memória desenvolvido para o meu portfólio, utilizando Javascript, manipulação de DOM e Web Storage. Os jogadores são desafiados a repetir sequências de cores e sons, enquanto o jogo armazena recordes e permite pausas e recomeços.",
+      "image":"",
+      "video":"/images/projetos/geniusMockup.mp4",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://thalles-leite.github.io/genius/",
+      "responsivo":true
+    },
+    {
+      "id":6,
+      "nome": "PokeMemory",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript"],
+      "frontend": true,
+      "backend": false,
+      "descricao": "O PokeMemory é um jogo de memória com tema Pokémon desenvolvido para o meu portfólio. Utilizando habilidades em manipulação de DOM, eventos, Web Storage, Flexbox e Media Query, criei uma experiência interativa onde os jogadores precisam encontrar pares de cartas correspondentes de Pokémon",
+      "image":"",
+      "video":"/images/projetos/pokeMemoryMockup.mp4",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://thalles-leite.github.io/pokeMemory/",
+      "responsivo":true
+    },
+    {
+      "id":7,
+      "nome": "Tryunfo",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript", "React"],
+      "frontend": true,
+      "backend": false,
+      "descricao": "Neste projeto, explorei e apliquei habilidades em React, dominando a leitura e atualização do estado de componentes, a captura de eventos, a criação de formulários e a transmissão eficiente de informações entre eles. Além disso, utilizei a abordagem Mobile First para garantir uma experiência de usuário otimizada em dispositivos móveis.\n \n Outro destaque do projeto foi a integração de APIs, permitindo a obtenção de dados externos em tempo real, proporcionando uma interatividade dinâmica aos usuários. Combinando conhecimentos adquiridos anteriormente e as melhores práticas de desenvolvimento, o Tryunfo Project foi uma oportunidade valiosa para aprimorar minhas habilidades em desenvolvimento web.",
+      "image":"",
+      "video":"/images/projetos/tryunfoMockup.mp4",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://tryunfoproject.vercel.app/",
+      "responsivo":true         
+    },
+    {
+      "id":8,
+      "nome": "TrybeTunes",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript", "React"],
+      "frontend": true,
+      "backend": false,
+      "descricao":"No projeto Trybetunes, aprimorei minhas habilidades em desenvolvimento React, incluindo o uso correto do ciclo de vida dos componentes, a manipulação do estado com o setState e a criação e mapeamento de rotas com o React Router. Além disso, explorei o consumo de API em tempo real para obter dados externos.\nDestaco também a criação de links de navegação utilizando o componente Link e a implementação do Switch do React Router para uma navegação eficiente na aplicação.\nNo aspecto visual, concluí o CSS responsivo utilizando SASS, uma ferramenta que simplifica o processo de estilização, e adotei a abordagem Mobile First, priorizando a experiência do usuário em dispositivos móveis.",
+      "image":"",
+      "video":"/images/projetos/tunesMockup.mp4",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://trybe-tunesproject.vercel.app/",
+      "responsivo":false
+    },
+    {
+      "id":9,
+      "nome": "TrybeWallet",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript", "React", "MaterialUI", "Redux"],
+      "frontend": true,
+      "backend": false,
+      "descricao":"No projeto TrybeWallet, pratiquei e aprimorei habilidades em desenvolvimento React com o uso do Redux. Aprendi a criar a store Redux, os reducers, actions e dispatchers para gerenciar o estado da aplicação de forma eficiente. Também explorei a conexão do Redux aos componentes React, permitindo uma comunicação eficaz entre eles. Além disso, adquiri conhecimentos em criação de actions assíncronas para lidar com operações assíncronas na aplicação.\n Para aprimorar minhas habilidades de frontend, estudei e implementei a estilização do projeto utilizando a biblioteca Material UI, que proporciona um conjunto de componentes prontos e estilizados. A estilização é totalmente responsiva, adaptando-se perfeitamente a diferentes tamanhos de tela. Além disso, implementei os modos Dark e Light usando os temas do Material UI, aprimorando a experiência do usuário no projeto.",
+      "image":"",
+      "video":"/images/projetos/walletMockup2.mp4",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://trybewalletproject.vercel.app/",
+      "responsivo":true
+    },
+    {
+      "id":10,
+      "nome": "Starwars Planets Search",
+      "tecnologias": ["HTML5", "CSS3", "JavaScript", "React", "Context API", "jest"],
+      "frontend": true,
+      "backend": false,
+      "descricao": "No projeto em questão, tive a oportunidade de aplicar diversas habilidades em React, o que resultou no desenvolvimento de uma aplicação funcional e altamente eficiente. Durante o processo, destaco o uso da Context API para o gerenciamento de estado, que permitiu compartilhar dados entre componentes sem a necessidade de passá-los manualmente por meio de propriedades. Essa abordagem proporcionou a criação de componentes mais simples, reutilizáveis e facilitou a manutenção do código.\n Além disso, utilizei com maestria os React Hooks useState, useContext e useEffect. O useState, um dos mais populares React Hooks, foi fundamental para adicionar e manipular o estado em componentes de função, sem a necessidade de criar classes. O useContext, por sua vez, permitiu o acesso ao contexto de um componente de função, simplificando a obtenção dos valores de contexto sem o repasse manual através das propriedades. Já o useEffect, um poderoso React Hook, possibilitou lidar com efeitos colaterais, como chamadas assíncronas a APIs e atualizações de estado.\n Por fim, uma prática fundamental para garantir a qualidade do projeto foi a implementação de testes abrangentes. Através dos testes, pude verificar se a aplicação estava funcionando corretamente, identificar erros antes mesmo de entrar em produção e economizar tempo e recursos. Com uma boa cobertura de testes, pude assegurar a estabilidade e confiabilidade da aplicação.",
+      "image":"",
+      "video":"/images/projetos/starWarsMockup.mp4",
+      "linkRepositorio": "#",
+      "linkDeploy": "https://starwars-planets-project.vercel.app/",
+      "responsivo":false
     }
-
     
   ]
 }
