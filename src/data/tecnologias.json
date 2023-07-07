@@ -11,7 +11,8 @@
     "Laravel": "/images/laravel.png",
     "MySQL": "/images/mysql.png",
     "MaterialUI": "/images/material-ui.svg",
-    "Redux":"/images/redux-icon.png"
+    "Redux":"/images/redux-icon.png",
+    "jest":"/images/jest2.png"
 
   }
 }

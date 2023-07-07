@@ -121,7 +121,7 @@
     {
       "id":10,
       "nome": "Starwars Planets Search",
-      "tecnologias": ["HTML5", "CSS3", "JavaScript", "React", "Context API", "jest"],
+      "tecnologias": ["HTML5", "CSS3", "JavaScript", "React", "jest"],
       "frontend": true,
       "backend": false,
       "descricao": "No projeto em questão, tive a oportunidade de aplicar diversas habilidades em React, o que resultou no desenvolvimento de uma aplicação funcional e altamente eficiente. Durante o processo, destaco o uso da Context API para o gerenciamento de estado, que permitiu compartilhar dados entre componentes sem a necessidade de passá-los manualmente por meio de propriedades. Essa abordagem proporcionou a criação de componentes mais simples, reutilizáveis e facilitou a manutenção do código.\n Além disso, utilizei com maestria os React Hooks useState, useContext e useEffect. O useState, um dos mais populares React Hooks, foi fundamental para adicionar e manipular o estado em componentes de função, sem a necessidade de criar classes. O useContext, por sua vez, permitiu o acesso ao contexto de um componente de função, simplificando a obtenção dos valores de contexto sem o repasse manual através das propriedades. Já o useEffect, um poderoso React Hook, possibilitou lidar com efeitos colaterais, como chamadas assíncronas a APIs e atualizações de estado.\n Por fim, uma prática fundamental para garantir a qualidade do projeto foi a implementação de testes abrangentes. Através dos testes, pude verificar se a aplicação estava funcionando corretamente, identificar erros antes mesmo de entrar em produção e economizar tempo e recursos. Com uma boa cobertura de testes, pude assegurar a estabilidade e confiabilidade da aplicação.",
