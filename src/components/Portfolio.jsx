@@ -127,14 +127,14 @@ export default function Portfolio() {
               </SwiperSlide>
             )).reverse()
           }
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <section className=" flex items-center justify-center h-full">
                 <Link href="/#" className="flex rounded-3xl flex-col items-center justify-center  gap-5 hover:font-bold ">
                   <FaArrowCircleUp className="w-6 h-6 text-gray-800" />
                   <p>Exibir todos os Projetos </p>
                 </Link>
               </section>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </section>
       </section>
