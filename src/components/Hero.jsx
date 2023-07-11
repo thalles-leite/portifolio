@@ -1,26 +1,26 @@
 // Hero.js
 import React from 'react';
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
 
 function Hero() {
   return (
     <section className=" text-gray-700 h-screen flex flex-col  items-center justify-center relative">
-      <secttion className="max-w-5xl flex flex-col md:flex-row items-center gap-10">
 
-        <section>
-          <div
-            data-aos="flip-right"
-            data-aos-duration="2000"
-            className="shadow-2xl rounded-full overflow-hidden"
-          >
-            <Image
-              src="/images/profile.jpeg"
-              alt="profile image"
-              width={250}
-              height={250}
-            />
-          </div>
-        </section>
+      <secttion className="max-w-5xl flex flex-col items-center gap-10">
+
+        <div
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          className="shadow-2xl rounded-full overflow-hidden"
+        >
+          <Image
+            src="/images/profile.jpeg"
+            alt="profile image"
+            width={350}
+            height={350}
+          />
+        </div>
 
         <section className="text-center">
           <div
@@ -31,7 +31,19 @@ function Hero() {
               Olá, sou
               <span className="text-slate-500"> Thalles.</span>
             </h1>
-            <h2 className="text-2xl ">Desenvolvedor Web Front-End</h2>
+            <h2 className="text-2xl  ">
+              <Typewriter
+                options={{
+                  strings: [
+                    'Desenvolvedor Web Front-End.',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  skipAddStyles: true,
+                  pauseFor: 2000,
+                }}
+              />
+            </h2>
 
           </div>
         </section>
