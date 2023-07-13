@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { FaFolderOpen, FaMobileAlt, FaArrowCircleUp } from 'react-icons/fa';
+import { FaFolderOpen, FaMobileAlt } from 'react-icons/fa';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -129,7 +129,9 @@ export default function Portfolio() {
           }
             {/* <SwiperSlide>
               <section className=" flex items-center justify-center h-full">
-                <Link href="/#" className="flex rounded-3xl flex-col items-center justify-center  gap-5 hover:font-bold ">
+                <Link href="/#"
+                className="flex
+                rounded-3xl flex-col items-center justify-center  gap-5 hover:font-bold ">
                   <FaArrowCircleUp className="w-6 h-6 text-gray-800" />
                   <p>Exibir todos os Projetos </p>
                 </Link>
