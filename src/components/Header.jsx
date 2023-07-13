@@ -12,18 +12,19 @@ export default function Header() {
         <Link href="https://github.com/thalles-leite" target="_blank" className="flex items-center justify-center">
           <FaGithub className="w-6 h-6 text-gray-800" />
         </Link>
-        <Link
+        <a
           className={`
-            flex items-center justify-center
+            flex items-center justify-center ml-4
+            text-gray-400
             gap-1
             pb-1 trasition duration-300 
             `}
-          href="#contact"
+          href="curriculo.pdf"
+          download
         >
-          <FaDownload className="w-5 h-5 text-gray-800" />
+          <FaDownload className="w-5 h-5 text-gray-400" />
           Currículo
-
-        </Link>
+        </a>
       </section>
       <nav className={`
         // sm:py-4 py-2
