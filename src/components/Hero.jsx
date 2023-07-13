@@ -64,7 +64,7 @@ function Hero() {
             </section>
             <section className="relative sm:w-10 w-5 sm:h-10 h-5">
 
-              <Image src="/images/CSS3.png" alt="profile image" fill />
+              <Image src="/images/css3.png" alt="profile image" fill />
             </section>
             <section className="relative sm:w-10 w-5 sm:h-10 h-5">
 

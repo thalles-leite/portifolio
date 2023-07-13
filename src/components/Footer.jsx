@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-center ">
       <section className=" p-5  text-gray-400">
         &copy; 2023 Thalles Leite
       </section>
@@ -18,6 +18,20 @@ export default function Footer() {
         </Link>
 
       </section>
+      <a
+        className={`
+            flex items-center justify-center ml-4
+            text-gray-400
+            gap-1
+            pb-1 trasition duration-300 
+            `}
+        href="curriculo.pdf"
+        download
+      >
+        <FaDownload className="w-5 h-5 text-gray-400" />
+        Currículo
+
+      </a>
     </section>
 
   );
