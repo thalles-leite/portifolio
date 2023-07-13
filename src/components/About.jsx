@@ -5,7 +5,7 @@ import { FaUserCircle } from 'react-icons/fa';
 
 export default function About() {
   return (
-    <section className="text-gray-800 pb-10 h-fit shadow-xl rounded-md flex flex-col items-center justify-start bg-white relative" id="about">
+    <section className=" bgCont text-gray-800 pb-10 h-fit rounded-md flex flex-col items-center justify-start bg-white relative" id="about">
       <section className="flex text-justify max-w-5xl   flex-col  items-center mt-10">
         <div
           data-aos="fade-right"

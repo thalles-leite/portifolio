@@ -42,7 +42,7 @@ export default function Portfolio() {
 
   return (
 
-    <section className="text-gray-800 pt-10  px-4 flex flex-col shadow-lg  items-center   relative" id="portfolio">
+    <section className="text-gray-800 pt-10  px-4 flex flex-col  items-center   relative" id="portfolio">
 
       <section className="flex text-justify w-full mb-10 max-w-7xl flex-col items-center mt-10">
         <section
@@ -73,7 +73,6 @@ export default function Portfolio() {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                   className="rounded-3xl p-3 justify-evenly flex flex-col items-center"
-
                 >
 
                   <p className="font-bold px-4 text-3xl">{projeto.nome}</p>
