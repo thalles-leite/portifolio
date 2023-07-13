@@ -59,7 +59,7 @@ export default function Portfolio() {
           <Swiper
             slidesPerView={slidesPerView}
             navigation
-            // loop
+            loop
             pagination={{
               clickable: true,
             }}
