@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Header() {
   return (
@@ -13,19 +13,19 @@ export default function Header() {
         <Link href="https://github.com/thalles-leite" target="_blank" className="flex items-center justify-center">
           <FaGithub className="w-6 h-6 text-gray-800" />
         </Link>
-        <a
+        {/* <a
           className={`
             flex items-center justify-center ml-4
             text-gray-400
             gap-1
-            pb-1 trasition duration-300 
+            pb-1 trasition duration-300
             `}
           href="curriculo.pdf"
           download
         >
           <FaDownload className="w-5 h-5 " />
           Currículo
-        </a>
+        </a> */}
       </section>
       <nav className={`
         // sm:py-4 py-2
