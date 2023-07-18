@@ -25,7 +25,7 @@ export default function Footer() {
             gap-1
             pb-1 trasition duration-300 
             `}
-        href="curriculov2.pdf"
+        href="curriculov3.pdf"
         download
       >
         <FaDownload className="w-5 h-5 text-gray-400" />

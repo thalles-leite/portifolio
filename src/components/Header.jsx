@@ -20,7 +20,7 @@ export default function Header() {
             gap-1
             pb-1 trasition duration-300
             `}
-          href="curriculov2.pdf"
+          href="curriculov3.pdf"
           download
         >
           <FaDownload className="w-5 h-5 " />
